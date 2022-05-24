@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+html {
+	margin: auto;
+	padding: auto;
+	font-family: serif;
+	font-size: 15px;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-image: url(../a/images/pattern.png);
+  width: 100%;
+  height: 50vh;
+  overflow: overlay;
+}
+
+h1, h2, p, li {
+	letter-spacing: 0.01rem;
+	font-family: 'Rajdhani', sans-serif;
+	line-height: 1.5;
+}
+ul {
+	background-color: white;
+	font-size: 20px;
+
+}
+
+img {
+  border-radius: 40%;
+}
+
+form div {
+	background: rgb(155, 126, 126);
+	border: 1px solid #999;
+	border-top: 2px solid #33f;
+	margin: 20px;
+	padding: 10px;
+
+
+}
+
+label {
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #33f;
+}
+
+
+
+
+/* Style the header */
+header {
+  background-color: #88320a;
+  padding: 12px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(151, 21, 21);
+}
+
+h4{
+  text-align: right;
+  font-size: 25px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 30%;
+
+  
+   
+  background: #9F9B9B;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #9e9797;
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: rgb(170, 147, 147);
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #88320a;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+nav li {
+	border-bottom: 1px solid rgb(55, 55, 80);
+	padding : 10px ;
+}
+
+div img{
+  width: 100%;
+}
+
+/* Círculo*/
+#grafico-01 {
+  background-color: #69280a;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+  filter: drop-shadow(20px 20px 20px rgba(51, 49, 49, 0.2) );
+  margin-right: 45px;
+}
+
+
+
+#grafico-01 img {
+ margin: 0%;
+  
+  
+}
+
+#grafico-01:hover{
+ filter: blur(2px);
+}
+
+
+
+
+
+.navegacao {
+  background-color: #9f9b9b;
+  padding: 0.9rem; 
+}
+
+.navegacao li a {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+
+
+
+.coluna {
+  display: block;
+  width: 40%;
+  float: left;
+  padding: 30px;
+  border-radius: 35px;
+  background-color: #69280a;
+ 
+ 
+
+}
+
+.colunapagina {
+  display: block;
+  width: 90%;
+  float: left;
+  padding: 25px;
+  background-color: #9F9B9B;
+  
+  
+
+}
+
+.coluna-100{
+  width: 100%;
+}
+
+iframe{
+  width: 100%;
+}
+
+/*mobile first*/
+
+@media(max-width: 760px) {
+  nav{
+    width: 30vw;
+  }
+
+  article {
+    width: 70vw;
+
+  }
+
+  .coluna {
+    width: 50vw;
+    min-width: unset;
+  }
+}
+
+@media(max-width: 425px){
+    nav,
+    article,
+    .coluna {
+      width: 100%;
+      min-width: 320px;
+    }
+}

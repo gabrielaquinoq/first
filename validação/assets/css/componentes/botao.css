@@ -1,0 +1,36 @@
+.botao {
+    font-family: 'Amatic SC', cursive;
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 20rem;
+    padding: 1.125rem;
+    box-sizing: border-box;
+    color: var(--cor-contraste-claro);
+    font-size: var(--fonte-tamanho-botao);
+    align-self: center;
+    text-align: center;
+}
+
+.botao-simples {
+    font-family: 'Amatic SC', cursive;
+    border: none;
+    background-color: unset;
+}
+
+.botao-simples--adicionar {
+    font-family: 'Amatic SC', cursive;
+    color: var(--cor-primaria);
+}
+
+.botao-simples--excluir {
+    font-family: 'Amatic SC', cursive;
+    color: var(--cor-aviso);
+}
+
+.botao-simples--editar {
+    font-family: 'Amatic SC', cursive;
+    color: var(--cor-sucesso);
+}

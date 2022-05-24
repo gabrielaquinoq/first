@@ -1,0 +1,24 @@
+.cadastro-cabecalho {
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1rem;
+}
+
+.cadastro-cabecalho__logo {
+    width: 2.625rem;
+    margin-bottom: 2rem;
+}
+
+
+
+@media(min-width: 800px) {
+    .cadastro-cabecalho__logo {
+        width: 10.75rem;
+        margin-bottom: 2rem;
+    }
+
+  
+}
